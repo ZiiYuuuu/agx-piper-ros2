@@ -9,12 +9,12 @@
 ## 1. Build the Workspace
 
 Compile the workspace:
-'''
+'''bash
 cd ~/agx_arm_ws
 colcon build
 '''
 Source the workspace:
-'''
+'''bash
 source ~/agx_arm_ws/install/setup.bash
 '''
 **Every new terminal should source the workspace before running any ROS commands.**
