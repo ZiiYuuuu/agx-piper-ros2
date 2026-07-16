@@ -129,6 +129,8 @@ Initial Position
 <img width="3024" height="4032" alt="4c282509743cb0ef52abf87047e4b657" src="https://github.com/user-attachments/assets/bddc303d-138e-4f03-bbb2-6338bfa760c3" />
 
 Control
+<img width="960" height="540" alt="GIF_20260716161740374" src="https://github.com/user-attachments/assets/8aee8a3e-fe80-4fef-af79-f216268b52e2" />
+<img width="540" height="960" alt="GIF_20260716161620611" src="https://github.com/user-attachments/assets/1b64971a-15c5-43b2-8169-cdf6948b106e" />
 
 ## 7. MoveIt
 
@@ -147,11 +149,23 @@ This includes
 - Motion Planning
 - Gripper Controller
 
-Initial Position
+Expected Output:
+<img width="842" height="540" alt="IMG_0575" src="https://github.com/user-attachments/assets/7fb6f605-2f8d-4541-9b31-6cc0e1c42113" />
 
 Arm
+<img width="540" height="720" alt="GIF_20260716163125963" src="https://github.com/user-attachments/assets/f5b43d67-112a-496d-91e2-5d544e1260c3" />
+
+Steps:
+- Goal State: Random
+- Plan & Execute
 
 Gripper
+<img width="540" height="960" alt="IMG_0573" src="https://github.com/user-attachments/assets/3e13a8be-058f-4ec1-830a-72494bc350ae" />
+
+Steps:
+- Planning Group: gripper
+- Goal State: gripper_half
+- Plan & Execute
 
 ## 8. RealSense Camera
 
