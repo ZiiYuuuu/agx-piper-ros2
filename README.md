@@ -6,6 +6,9 @@
 - CAN interface configured (can0)
 - Intel RealSense D435 (optional)
 
+**Connect Hardware**
+<img width="3024" height="4032" alt="a60db105ca9b49449b6acfebd11a4ec9" src="https://github.com/user-attachments/assets/356ba724-0ade-4374-a006-65791c853ac1" />
+
 ## 1. Build the Workspace
 
 Compile the workspace:
@@ -17,6 +20,8 @@ Source the workspace:
 ```
 source ~/agx_arm_ws/install/setup.bash
 ```
+<img width="727" height="339" alt="image" src="https://github.com/user-attachments/assets/20470656-7e04-4020-9262-c7cffcec0b3b" />
+
 **Every new terminal should source the workspace before running any ROS commands.**
 
 ## 2. Activate the CAN Interface
@@ -29,6 +34,8 @@ Activate CAN:
 ```
 bash can_activate.sh
 ```
+<img width="811" height="227" alt="Screenshot from 2026-07-15 14-43-28" src="https://github.com/user-attachments/assets/94f3a16d-b384-4a64-9176-36428e835c4d" />
+
 ## 3. Start the Arm Controller
 
 Run the controller node:
@@ -43,6 +50,7 @@ Expected output:
 
 All joints enable status is True
 Agx_arm feedback is ready, control is now enabled
+<img width="811" height="532" alt="Screenshot from 2026-07-15 14-46-14" src="https://github.com/user-attachments/assets/b6d715dc-72c3-4c9c-8c79-0f4a70699101" />
 
 You can also launch the controller using:
 ```
@@ -52,6 +60,8 @@ ros2 launch agx_arm_ctrl start_single_agx_arm.launch.py \
     effector_type:=none \
     tcp_offset:='[0.0,0.0,0.0,0.0,0.0,0.0]'
 ```
+<img width="1909" height="432" alt="image" src="https://github.com/user-attachments/assets/836b9857-6c34-4fbf-aaea-c255cc3145ee" />
+
 ## 4. Verify Arm Status
 
 Check whether the controller is connected:
@@ -98,6 +108,8 @@ effort: []
 "
 ```
 Joint angles are specified in radians.
+<img width="4032" height="3024" alt="ff73fa7b22cb61e04b6db5b48cda6ee7" src="https://github.com/user-attachments/assets/3f757b82-c8a1-492c-9adb-acf77e9d82d5" />
+
 
 ## 6. RViz Control
 
@@ -109,6 +121,10 @@ ros2 launch agx_arm_ctrl start_single_agx_arm_rviz.launch.py \
     follow:=true \
     control:=true
 ```
+Initial Position 
+<img width="1470" height="890" alt="image" src="https://github.com/user-attachments/assets/1c2aab24-394d-4040-b1af-e400fd40f00c" />
+<img width="3024" height="4032" alt="4c282509743cb0ef52abf87047e4b657" src="https://github.com/user-attachments/assets/bddc303d-138e-4f03-bbb2-6338bfa760c3" />
+
 ## 7. MoveIt
 
 Launch MoveIt:
