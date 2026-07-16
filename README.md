@@ -47,10 +47,8 @@ ros2 run agx_arm_ctrl agx_arm_ctrl_single \
   -p effector_type:=none
 ```
 Expected output:
-
-All joints enable status is True
-
-Agx_arm feedback is ready, control is now enabled
+- All joints enable status is True
+- Agx_arm feedback is ready, control is now enabled
 <img width="811" height="532" alt="Screenshot from 2026-07-15 14-46-14" src="https://github.com/user-attachments/assets/b6d715dc-72c3-4c9c-8c79-0f4a70699101" />
 
 You can also launch the controller using:
@@ -156,6 +154,8 @@ Arm
 Gripper
 
 ## 8. RealSense Camera
+
+<img width="4032" height="3024" alt="20ee1b7f518a0b174a114a227c28b4d6" src="https://github.com/user-attachments/assets/df55f981-e6c5-406c-bf35-9255d6395ccb" />
 
 Launch the camera:
 ```
