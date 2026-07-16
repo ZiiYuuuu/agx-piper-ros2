@@ -108,7 +108,8 @@ effort: []
 ```
 Joint angles are specified in radians.
 
-Expected Output Position
+Expected Output Position: 
+
 <img width="4032" height="3024" alt="ff73fa7b22cb61e04b6db5b48cda6ee7" src="https://github.com/user-attachments/assets/3f757b82-c8a1-492c-9adb-acf77e9d82d5" />
 
 ## 6. RViz Control
@@ -121,14 +122,17 @@ ros2 launch agx_arm_ctrl start_single_agx_arm_rviz.launch.py \
     follow:=true \
     control:=true
 ```
-Expected Output
+Expected Output: 
+
 <img width="1722" height="702" alt="image" src="https://github.com/user-attachments/assets/ae8d4d89-e72b-4b07-8c60-49af5bc365d1" />
 
-Initial Position 
+Initial Position: 
+
 <img width="1470" height="890" alt="image" src="https://github.com/user-attachments/assets/1c2aab24-394d-4040-b1af-e400fd40f00c" />
 <img width="3024" height="4032" alt="4c282509743cb0ef52abf87047e4b657" src="https://github.com/user-attachments/assets/bddc303d-138e-4f03-bbb2-6338bfa760c3" />
 
-Control
+Control: 
+
 <img width="960" height="540" alt="GIF_20260716161740374" src="https://github.com/user-attachments/assets/8aee8a3e-fe80-4fef-af79-f216268b52e2" />
 <img width="540" height="960" alt="GIF_20260716161620611" src="https://github.com/user-attachments/assets/1b64971a-15c5-43b2-8169-cdf6948b106e" />
 
@@ -150,16 +154,19 @@ This includes
 - Gripper Controller
 
 Expected Output:
+
 <img width="842" height="540" alt="IMG_0575" src="https://github.com/user-attachments/assets/7fb6f605-2f8d-4541-9b31-6cc0e1c42113" />
 
-Arm
+Arm: 
+
 <img width="540" height="720" alt="GIF_20260716163125963" src="https://github.com/user-attachments/assets/f5b43d67-112a-496d-91e2-5d544e1260c3" />
 
 Steps:
 - Goal State: Random
 - Plan & Execute
 
-Gripper
+Gripper: 
+
 <img width="540" height="960" alt="IMG_0573" src="https://github.com/user-attachments/assets/3e13a8be-058f-4ec1-830a-72494bc350ae" />
 
 Steps:
