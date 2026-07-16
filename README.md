@@ -1,22 +1,23 @@
-AGX Piper ROS2 Usage Guide
-Requirements
-Ubuntu 24.04
-ROS2 Jazzy
-AGX Arm ROS SDK
-CAN interface configured (can0)
-Intel RealSense D435 (optional)
-1. Build the Workspace
+# AGX Piper ROS2 Usage Guide
+## Requirements
+- Ubuntu 24.04
+- ROS2 Jazzy
+- AGX Arm ROS SDK
+- CAN interface configured (can0)
+- Intel RealSense D435 (optional)
+
+## 1. Build the Workspace
 
 Compile the workspace:
-
+'''
 cd ~/agx_arm_ws
 colcon build
-
+'''
 Source the workspace:
-
+'''
 source ~/agx_arm_ws/install/setup.bash
-
-Every new terminal should source the workspace before running any ROS commands.
+'''
+**Every new terminal should source the workspace before running any ROS commands.**
 
 2. Activate the CAN Interface
 
