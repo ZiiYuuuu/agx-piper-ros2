@@ -108,8 +108,9 @@ effort: []
 "
 ```
 Joint angles are specified in radians.
-<img width="4032" height="3024" alt="ff73fa7b22cb61e04b6db5b48cda6ee7" src="https://github.com/user-attachments/assets/3f757b82-c8a1-492c-9adb-acf77e9d82d5" />
 
+Expected Output Position
+<img width="4032" height="3024" alt="ff73fa7b22cb61e04b6db5b48cda6ee7" src="https://github.com/user-attachments/assets/3f757b82-c8a1-492c-9adb-acf77e9d82d5" />
 
 ## 6. RViz Control
 
@@ -121,9 +122,14 @@ ros2 launch agx_arm_ctrl start_single_agx_arm_rviz.launch.py \
     follow:=true \
     control:=true
 ```
+Expected Output
+<img width="1722" height="702" alt="image" src="https://github.com/user-attachments/assets/ae8d4d89-e72b-4b07-8c60-49af5bc365d1" />
+
 Initial Position 
 <img width="1470" height="890" alt="image" src="https://github.com/user-attachments/assets/1c2aab24-394d-4040-b1af-e400fd40f00c" />
 <img width="3024" height="4032" alt="4c282509743cb0ef52abf87047e4b657" src="https://github.com/user-attachments/assets/bddc303d-138e-4f03-bbb2-6338bfa760c3" />
+
+Control
 
 ## 7. MoveIt
 
@@ -142,29 +148,35 @@ This includes
 - Motion Planning
 - Gripper Controller
 
+Initial Position
+
+Arm
+
+Gripper
+
 ## 8. RealSense Camera
 
 Launch the camera:
 ```
 ros2 launch realsense2_camera rs_launch.py
 ```
-Launch with aligned depth image:
-```
-source /opt/ros/jazzy/setup.bash
+<img width="1878" height="766" alt="image" src="https://github.com/user-attachments/assets/bbe7dddf-efb7-47aa-bdbb-e70660b1b73c" />
 
-ros2 launch realsense2_camera rs_launch.py \
-    align_depth.enable:=true
-```
 ## 9. Visualize Images
 
 Using RViz:
 ```
 rviz2
 ```
+*Need to add camera manually*
 Or
 ```
 ros2 run rqt_image_view rqt_image_view
 ```
+Sample Output: 
+<img width="1211" height="764" alt="Screenshot from 2026-07-16 12-03-17" src="https://github.com/user-attachments/assets/fcd4b33e-9772-410b-a0b6-e925d8653d35" />
+<img width="1211" height="764" alt="Screenshot from 2026-07-16 12-03-26" src="https://github.com/user-attachments/assets/a3e4bf6d-280b-426e-a5ad-754639b61319" />
+
 ## 10. Frequently Used Services
 
 Enable the arm:
@@ -233,24 +245,6 @@ err_status: 0
 before executing trajectories.
 
 If the controller does not respond, first check the CAN interface and ensure the controller node has started successfully.
-📁 Recommended Repository Structure
-
-建议你的 GitHub 最终目录结构整理成这样：
-
-agx_arm_project/
-│
-├── README.md                ← 使用说明（就是上面的内容）
-├── images/
-│   ├── rviz.png
-│   ├── moveit.png
-│   ├── camera.png
-│   ├── system_overview.png
-│   └── hardware_setup.jpg
-│
-├── launch/
-├── scripts/
-├── config/
-└── src/
 
 <p align="center">
   <img src="images/rviz.png" width="700">
