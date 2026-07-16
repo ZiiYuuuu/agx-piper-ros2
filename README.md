@@ -49,6 +49,7 @@ ros2 run agx_arm_ctrl agx_arm_ctrl_single \
 Expected output:
 
 All joints enable status is True
+
 Agx_arm feedback is ready, control is now enabled
 <img width="811" height="532" alt="Screenshot from 2026-07-15 14-46-14" src="https://github.com/user-attachments/assets/b6d715dc-72c3-4c9c-8c79-0f4a70699101" />
 
