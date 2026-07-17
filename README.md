@@ -76,15 +76,10 @@ err_status: 0
 ```
 
 Field	Description
-
-ctrl_mode = 1	CAN command control
-
-teach_status = 0	Not in teach mode
-
-motion_status = 0	Normal
-
-err_status = 0	No error
-
+- ctrl_mode = 1	CAN command control
+- teach_status = 0	Not in teach mode
+- motion_status = 0	Normal
+- err_status = 0	No error
 
 ## 5. Move the Robot (Joint Command)
 
@@ -204,7 +199,7 @@ Sample Output:
 <img width="1211" height="764" alt="Screenshot from 2026-07-16 12-03-17" src="https://github.com/user-attachments/assets/fcd4b33e-9772-410b-a0b6-e925d8653d35" />
 <img width="1211" height="764" alt="Screenshot from 2026-07-16 12-03-26" src="https://github.com/user-attachments/assets/a3e4bf6d-280b-426e-a5ad-754639b61319" />
 
-## 10. YOLO Bottle Recognition and grasp
+## 10. YOLO Bottle Recognition and Grasp
 ### Terminal 1
 Enter YOLO environment
 ```
