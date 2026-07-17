@@ -238,9 +238,6 @@ Topic	Description
 /feedback/tcp_pose	TCP pose
 /feedback/arm_status	Controller status
 ```
-<p align="center">
-  <img src="images/rviz.png" width="700">
-</p>
 
 ## Appendix A: Upper Computer
 
