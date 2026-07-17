@@ -76,10 +76,15 @@ err_status: 0
 ```
 
 Field	Description
+
 ctrl_mode = 1	CAN command control
+
 teach_status = 0	Not in teach mode
+
 motion_status = 0	Normal
+
 err_status = 0	No error
+
 
 ## 5. Move the Robot (Joint Command)
 
