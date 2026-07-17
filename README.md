@@ -212,7 +212,7 @@ python ~/yolo_ros_test/yolo_d435.py
 ```
 <img width="1464" height="584" alt="Screenshot from 2026-07-17 10-11-18" src="https://github.com/user-attachments/assets/a6b178b8-1670-43c1-ab5b-10d9b3333f52" />
 
-### Tweminal 2
+### Terminal 2
 Grasp
 ```
 python ~/yolo_ros_test/moveit_grasp_executor.py
@@ -238,41 +238,6 @@ Topic	Description
 /feedback/tcp_pose	TCP pose
 /feedback/arm_status	Controller status
 ```
-## 13. Typical Startup Workflow
-```
-Build Workspace
-        │
-        ▼
-Source Workspace
-        │
-        ▼
-Activate CAN
-        │
-        ▼
-Launch agx_arm_ctrl
-        │
-        ▼
-Verify ctrl_mode == 1
-        │
-        ▼
-Launch RViz / MoveIt
-        │
-        ▼
-Control the Robot
-```
-Notes
-The robot must report:
-ctrl_mode: 1
-
-before accepting motion commands.
-
-Verify that
-err_status: 0
-
-before executing trajectories.
-
-If the controller does not respond, first check the CAN interface and ensure the controller node has started successfully.
-
 <p align="center">
   <img src="images/rviz.png" width="700">
 </p>
