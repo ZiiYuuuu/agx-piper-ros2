@@ -241,3 +241,10 @@ Topic	Description
 <p align="center">
   <img src="images/rviz.png" width="700">
 </p>
+
+## Appendix A: Upper Computer
+
+Download Link: 
+```
+https://drive.google.com/file/d/10I1erAlSM8PpaGt4diE26OCz9Y9kCnj5/view?usp=drive_link
+```
