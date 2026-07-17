@@ -199,20 +199,25 @@ Sample Output:
 <img width="1211" height="764" alt="Screenshot from 2026-07-16 12-03-17" src="https://github.com/user-attachments/assets/fcd4b33e-9772-410b-a0b6-e925d8653d35" />
 <img width="1211" height="764" alt="Screenshot from 2026-07-16 12-03-26" src="https://github.com/user-attachments/assets/a3e4bf6d-280b-426e-a5ad-754639b61319" />
 
-## 10. Frequently Used Services
+## 10. YOLO Bottle Recognition and grasp
+### Terminal 1
+Enter YOLO environment
+```
+source ~/venvs/yolo/bin/activate
+source /opt/ros/jazzy/setup.bash
+```
+Recognition bottle
+```
+python ~/yolo_ros_test/yolo_d435.py
+```
+<img width="1464" height="584" alt="Screenshot from 2026-07-17 10-11-18" src="https://github.com/user-attachments/assets/a6b178b8-1670-43c1-ab5b-10d9b3333f52" />
 
-Enable the arm:
+### Tweminal 2
+Grasp
 ```
-ros2 service call /enable_agx_arm std_srvs/srv/SetBool "{data: true}"
+python ~/yolo_ros_test/moveit_grasp_executor.py
 ```
-Move to Home:
-```
-ros2 service call /move_home std_srvs/srv/Empty
-```
-Emergency Stop:
-```
-ros2 service call /emergency_stop std_srvs/srv/Empty
-```
+
 ## 11. Check Available Nodes
 ```
 ros2 node list
