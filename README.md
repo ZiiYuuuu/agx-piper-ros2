@@ -239,9 +239,13 @@ Topic	Description
 /feedback/arm_status	Controller status
 ```
 
-## Appendix A: Upper Computer
+## Appendix A: Host Computer
 
 Download Link: 
 ```
 https://drive.google.com/file/d/10I1erAlSM8PpaGt4diE26OCz9Y9kCnj5/view?usp=drive_link
+```
+Instruction: 
+```
+https://agilexsupport.yuque.com/staff-hso6mo/alxgtf/vtzuqgp35ay6lfx7#UGuzA
 ```
